@@ -1,12 +1,12 @@
 function start(){
-  var inputRange = document.querySelector('#inputRange');
-  var inputValue = document.querySelector('#inputValue');
-  var inputText = document.querySelector('#inputText');
+  const inputRange = document.querySelector('#inputRange');
+  const inputValue = document.querySelector('#inputValue');
+  const inputText = document.querySelector('#inputText');
 
   inputRange.addEventListener('input', handleRangeInput);
 
   function handleRangeInput(event){
-    var currentValue = event.target.value;
+    const currentValue = event.target.value;
     inputValue.value = currentValue;
     inputText.value = numberToDescription(currentValue);
   }
@@ -25,12 +25,11 @@ function units(value){
 }
 
 function dozens(value){
-  var first = value[0];
-  var second = value[1];
+  const first = value[0];
+  const second = value[1];
 
   if(first !== '1' && second !== '0'){
-    first += '0';
-    return `${dictionary[first]} e ${units(second)}`;
+    return `${dictionary[first + '00']} e ${units(second)}`;
   }
   if(first === '1'){
     return dictionary[value];
@@ -39,19 +38,16 @@ function dozens(value){
 }
 
 function hundreds(value){
-  var first = value[0];
-  var rest = value.substring(1);
-  var prefix;
+  const first = value[0];
+  const rest = value.substring(1);
 
   if(rest !== '00'){
-    first += '00';
-    prefix = dictionary[first] + ' e ';
+    const prefix = dictionary[first + '00'] + ' e ';
 
     if(rest[0] !== '0'){
-      return prefix += dozens(rest);
+      return prefix + dozens(rest);
     }
-    var unit = rest[1];
-    return prefix += units(unit);
+    return prefix + units(rest[1]);
   }
   if(first !== '1'){
     return dictionary[value];
