@@ -89,5 +89,7 @@ para atuar profissionalmente na área
 ## Trabalhos práticos
 Aplicações desenvolvidas na metade do módulo para colocar em prática os conhecimentos adiquiridos.
 
+- [Trabalho Prático do Módulo 1](https://github.com/SiRGuimaraes/bootcamp-full-stack/tree/master/trabalho-pratico-1)
+
 ## Desafios
 Aplicações desenvolvidas ao final do módulo para colocar em prática os conhecimentos adiquiridos.
