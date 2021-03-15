@@ -1,4 +1,6 @@
 # Bootcamp - Desenvolvedor Full-Stack
+ 
+<img src="image/full-stack-logo.png" width="200">
 
 # Sobre o repositório
 
