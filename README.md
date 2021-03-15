@@ -2,7 +2,7 @@
  
 <img src="image/full-stack-logo.png" width="200">
 
-# Sobre o repositório
+## Sobre o repositório
 
 Projetos práticos desenvolvidos durante o bootcamp de desenvolvedor Full Stack do [IGTI](https://www.igti.com.br/).
 
@@ -91,7 +91,12 @@ para atuar profissionalmente na área
 ## Trabalhos práticos
 Aplicações desenvolvidas na metade do módulo para colocar em prática os conhecimentos adiquiridos.
 
-- [Trabalho Prático do Módulo 1](https://github.com/SiRGuimaraes/bootcamp-full-stack/tree/master/trabalho-pratico-1)
+- [Trabalho Prático do Módulo 1](https://github.com/SiRGuimaraes/bootcamp-full-stack/tree/master/trabalhos-praticos/trabalho-pratico-1) - Números por extenso
 
 ## Desafios
 Aplicações desenvolvidas ao final do módulo para colocar em prática os conhecimentos adiquiridos.
+
+## Outros desafios
+Aplicações desenvolvidas durante as aulas do módulo
+
+- [CRUD](https://github.com/SiRGuimaraes/bootcamp-full-stack/tree/master/outros-desafios/crud)
