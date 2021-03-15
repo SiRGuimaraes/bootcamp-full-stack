@@ -1,16 +1,16 @@
-window.addEventListener('load', start);
+let globalNames = ['Um', 'Dois', 'Três', 'Quatro', 'Cinco'];
+let inputName = null;
+let currentIndex = null;
+let isEditing = false;
 
-var globalNames = ['Um', 'Dois', 'Três', 'Quatro', 'Cinco'];
-var inputName = null;
-var currentIndex = null;
-var isEditing = false;
-function start(){
+window.addEventListener('load', () => {
   inputName = document.querySelector('#inputName');
-
+  
   preventFormSubmit();
   activateInput();
   render();
-}
+});
+
 
 function preventFormSubmit(){
   function handleFormSubmit(event){
@@ -23,7 +23,8 @@ function preventFormSubmit(){
 
 function activateInput(){
   function insertName(newName){
-    globalNames.push(newName);
+    //globalNames.push(newName);
+    globalNames = [...globalNames, newName];
   }
   function updateName(newName){
     globalNames[currentIndex] = newName;
@@ -48,7 +49,9 @@ function activateInput(){
 function render(){
   function createDeletebutton(index){
     function deleteName(){
-      globalNames.splice(index, 1);
+      //globalNames.splice(index, 1);
+      globalNames = globalNames.filter((name, i) => i !== index);
+      
       render();
     }
     var button = document.createElement('button');
@@ -66,23 +69,23 @@ function render(){
       isEditing = true;
       currentIndex = index;
     }
-    var span = document.createElement('span');
+    const span = document.createElement('span');
     span.classList.add('clickable');
     span.textContent = name;
     span.addEventListener('click', editItem)
 
     return span;
   }
-  var divNames = document.querySelector('#names');
-  var ul = document.createElement('ul');
+  const divNames = document.querySelector('#names');
+  const ul = document.createElement('ul');
 
   divNames.innerHTML = '';
 
   for(var i = 0; i < globalNames.length; i++){
-    var currentName = globalNames[i];
-    var li = document.createElement('li');
-    var button = createDeletebutton(i);
-    var span = createSpan(currentName, i);
+    const currentName = globalNames[i];
+    const li = document.createElement('li');
+    const button = createDeletebutton(i);
+    const span = createSpan(currentName, i);
 
     li.appendChild(button);
     li.appendChild(span);
