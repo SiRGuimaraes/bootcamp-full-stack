@@ -9,7 +9,23 @@ let allCountries = [];
 let favoriteCountries = [];
 
 function start(){
+  fetchCountries();
+}
 
+async function fetchCountries(){
+  const res = await fetch('https://restcountries.eu/rest/v2/all');
+  const json = await res.json() ;
+
+  allCountries = json.map(country => {
+    const {numericCode, translations, population, flag} = country;
+
+    return {
+      id: numericCode,
+      name: translations.br,
+      population,
+      flag
+    }
+  });
 }
 
 start();
