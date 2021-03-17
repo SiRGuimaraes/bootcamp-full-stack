@@ -7,3 +7,9 @@ const totalPopulationFavorites = document.querySelector('#totalPopulationFavorit
 
 let allCountries = [];
 let favoriteCountries = [];
+
+function start(){
+
+}
+
+start();
