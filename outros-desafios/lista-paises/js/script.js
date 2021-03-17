@@ -88,7 +88,42 @@ function renderSumary(){
 }
 
 function handleCountryButtons(){
+  const addButtons = tabCountries.querySelectorAll('.btn');
+  const removeButtons = tabFavorites.querySelectorAll('.btn');
 
+  addButtons.forEach(button => {
+    button.addEventListener('click', addToFavorites);
+  });
+  removeButtons.forEach(button => {
+    button.addEventListener('click', removeFromFavorites);
+  });
+
+  function addToFavorites(){
+    const countryToAdd = allCountries.find(country => {
+      return country.id === this.id;
+    });
+
+    favoriteCountries = [...favoriteCountries, countryToAdd];
+
+    allCountries = allCountries.filter(country => {
+      return country.id !== this.id;
+    });
+
+    render();
+  }
+
+  function removeFromFavorites(){
+    const countryToRemove = favoriteCountries.find(country => {
+      return country.id === this.id;
+    });
+
+    allCountries = [...allCountries, countryToRemove];
+
+    favoriteCountries = favoriteCountries.filter(country => {
+      return country.id !== this.id;
+    });
+    render();
+  }
 }
 
 function formatNumber(number){
