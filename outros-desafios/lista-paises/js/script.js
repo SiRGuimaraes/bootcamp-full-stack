@@ -73,4 +73,12 @@ function handleHtmlList(country){
   `
 }
 
+function renderSumary(){
+
+}
+
+function formatNumber(number){
+  return Intl.NumberFormat('pt-BR').format(number);
+}
+
 start();
