@@ -91,7 +91,7 @@ para atuar profissionalmente na área
 ## Trabalhos práticos
 Aplicações desenvolvidas na metade do módulo para colocar em prática os conhecimentos adiquiridos.
 
-- [Trabalho Prático do Módulo 1](https://github.com/SiRGuimaraes/bootcamp-full-stack/tree/master/trabalhos-praticos/trabalho-pratico-1) - Números por extenso
+- [Trabalho Prático do Módulo 1](https://github.com/rafa-guimaraes/bootcamp-full-stack/tree/master/trabalhos-praticos/trabalho-pratico-1) - Números por extenso
 
 ## Desafios
 Aplicações desenvolvidas ao final do módulo para colocar em prática os conhecimentos adiquiridos.
@@ -99,4 +99,5 @@ Aplicações desenvolvidas ao final do módulo para colocar em prática os conhe
 ## Outros desafios
 Aplicações desenvolvidas durante as aulas do módulo
 
-- [CRUD](https://github.com/SiRGuimaraes/bootcamp-full-stack/tree/master/outros-desafios/crud)
+- [CRUD](https://github.com/rafa-guimaraes/bootcamp-full-stack/tree/master/outros-desafios/crud) - CRUD simples utilizando html, css e js
+- [Lista de países](https://github.com/rafa-guimaraes/bootcamp-full-stack/tree/master/outros-desafios/lista-paises) - lista de países recebida de uma api
