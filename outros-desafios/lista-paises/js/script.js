@@ -26,6 +26,15 @@ async function fetchCountries(){
       flag
     }
   });
+  render();
 }
+
+function render(){
+  renderCountryList();
+  renderFavorites();
+  renderSumary();
+  handleCountryButtons();
+}
+
 
 start();
