@@ -105,6 +105,8 @@ function handleCountryButtons(){
 
     favoriteCountries = [...favoriteCountries, countryToAdd];
 
+    sortCountries(favoriteCountries);
+
     allCountries = allCountries.filter(country => {
       return country.id !== this.id;
     });
@@ -119,10 +121,16 @@ function handleCountryButtons(){
 
     allCountries = [...allCountries, countryToRemove];
 
+    sortCountries(allCountries);
+
     favoriteCountries = favoriteCountries.filter(country => {
       return country.id !== this.id;
     });
     render();
+  }
+
+  function sortCountries(countries){
+    countries.sort((a,b) => a.name.localeCompare(b.name));
   }
 }
 
