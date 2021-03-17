@@ -74,6 +74,20 @@ function handleHtmlList(country){
 }
 
 function renderSumary(){
+  countCountries.textContent = allCountries.length;
+  countFavorites.textContent = favoriteCountries.length;
+
+  totalPopulationList.textContent = formatNumber(totalPopulation(allCountries));
+  totalPopulationFavorites.textContent = formatNumber(totalPopulation(favoriteCountries));
+
+  function totalPopulation(countries){
+    return countries.reduce((acc, curr)=>{
+      return acc + curr.population;
+    }, 0);
+  }
+}
+
+function handleCountryButtons(){
 
 }
 
