@@ -31,6 +31,14 @@ correspondente, conforme imagens mais abaixo.
 8. No painel da direita, calcular e mostrar algumas estatísticas sobre esses usuários,
 conforme imagens abaixo.
 
+**Tela inicial da aplicação:**
+
+<img src="../images/desafio1-1.png" alt="Tela inicial">
+
+**Tela após filtro "santos":**
+
+<img src="../images/desafio1-2.png" alt="Tela após filtro">
+
 ## Dicas
 
 1. Após executar a requisição à API, obtenha somente os dados necessários ao app.
@@ -56,3 +64,26 @@ os comandos document.createElement, appendChild, etc.
 11. Não deixe de assistir o vídeo desse desafio, onde demonstro a aplicação em
 funcionamento e dou mais algumas dicas.
 
+# Como executar o projeto
+Pré-requisitos: npm / yarn
+
+```bash
+# clonar repositório
+git clone https://github.com/rafa-guimaraes/bootcamp-full-stack.git
+
+# entrar na pasta backend do projeto
+cd desafios/desafio-1/backend
+
+# instalar dependências
+yarn install ou npm install
+
+# executar o backend
+yarn start ou npm start
+
+# executar o frontend
+na pasta frontend, abra em index.html no seu navegador
+```
+# Autor
+Rafael Guimarães Nogueira
+
+https://www.linkedin.com/in/rafael-guimaraes-nogueira/
