@@ -96,6 +96,8 @@ Aplicações desenvolvidas na metade do módulo para colocar em prática os conh
 ## Desafios
 Aplicações desenvolvidas ao final do módulo para colocar em prática os conhecimentos adiquiridos.
 
+- [Desafio do Módulo 1](https://github.com/rafa-guimaraes/bootcamp-full-stack/tree/master/desafios/desafio-1) - Pesquisa de usuários
+
 ## Outros desafios
 Aplicações desenvolvidas durante as aulas do módulo
 
