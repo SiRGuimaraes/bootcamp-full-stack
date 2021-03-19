@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/materialize.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Pesquisa de usuários</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="center-align">Pesquisa de usuários</h1>
+      <div class="row valign-wrapper center-align">
+        <div class="input-field col s12">
+          <input type="text" class="validade" id="inputSearch" />
+          <label for="inputSearch">Busca</label>
+        </div>
+        <input class="btn col" id="searchButton" type="submit" value="Buscar" />
+      </div>
+
+      <div id="output" class="row">
+        <div id="divFilteredUsers" class="data">
+          <h2>Nenhum usuário filtrado</h2>
+          <ul id="usersList"></ul>
+        </div>
+        <div id="divUsersStatistics" class="data">
+          <h2>Nada a ser exibido</h2>
+          <ul id="statisticsList"></ul>
+        </div>
+      </div>
+    </div>
+
+    <script src="js/script.js" defer></script>
+    <script src="js/materialize.js"></script>
+  </body>
+</html>

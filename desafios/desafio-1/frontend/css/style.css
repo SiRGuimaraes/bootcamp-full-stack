@@ -1,0 +1,28 @@
+#output {
+  padding: 5px;
+  display: flex;
+}
+
+.data {
+  width: 50%;
+  margin: 5px;
+  padding-left: 10px;
+  border-radius: 5px;
+  border: 1px solid rgba(160, 160, 160, 0.2);
+}
+
+#usersList img {
+  padding: 10px;
+}
+#usersList li {
+  display: flex;
+  align-items: center;
+}
+@media screen and (max-width: 800px) {
+  #output {
+    flex-direction: column-reverse;
+  }
+  .data {
+    width: 100%;
+  }
+}
