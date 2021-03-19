@@ -32,7 +32,7 @@ deve mostrar o número selecionado do range em formato **numérico.**
 deve mostrar o número selecionado do range em formato **por extenso.**
 3. A imagem abaixo ilustra uma possível interface para a aplicação.
 
-<img src="../assets/numeros-extenso.png" alt="Números por extenso">
+<img src="../images/numeros-extenso.png" alt="Números por extenso">
 
 ## Dicas
 
