@@ -1,4 +1,4 @@
-import { promises } from 'fs';
+import { promises, read } from 'fs';
 const { readFile, writeFile } = promises;
 const ALL_STATES = 'origin-json/Estados.json';
 const ALL_CITIES = 'origin-json/Cidades.json';
@@ -19,6 +19,11 @@ async function createFiles() {
       JSON.stringify(stateCities, null, 2)
     );
   }
+}
+
+async function getCitiesCount(uf) {
+  const cities = JSON.parse(await readFile(`states/${uf}.json`));
+  return cities.length;
 }
 
 start();
