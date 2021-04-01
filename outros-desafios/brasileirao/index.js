@@ -39,9 +39,15 @@ async function start() {
     teams.sort((a, b) => b.score - a.score);
 
     console.log('O campeão foi: ' + teams[0].name);
+
+    saveTeams();
   } catch (err) {
     console.log(err);
   }
+}
+
+async function saveTeams() {
+  await writeFile('teams.json', JSON.stringify(teams, null, 2));
 }
 
 start();
