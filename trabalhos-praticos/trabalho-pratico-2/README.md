@@ -33,3 +33,16 @@ Os alunos deverão desempenhar as seguintes atividades:
 - Você deve considerar os nomes das cidades da forma que estão no arquivo, mesmo que tenha observações no nome entre parênteses. Exemplo: Cidade X (antiga Cidade Y).
 - Ao rodar o projeto, ele deve executar os métodos em sequência e depois finalizar a execução.
 
+# Como executar o projeto
+Pré-requisitos: npm / yarn
+
+```bash
+# clonar repositório
+git clone https://github.com/rafa-guimaraes/bootcamp-full-stack.git
+
+# entrar na pasta do projeto
+cd trabalhos-praticos/trabalho-pratico-2/
+
+# executar o projeto
+node index.js
+```
