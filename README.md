@@ -92,6 +92,7 @@ para atuar profissionalmente na área
 Aplicações desenvolvidas na metade do módulo para colocar em prática os conhecimentos adiquiridos.
 
 - [Trabalho Prático do Módulo 1](https://github.com/rafa-guimaraes/bootcamp-full-stack/tree/master/trabalhos-praticos/trabalho-pratico-1) - Números por extenso
+- [Trabalho Prático do Módulo 2](https://github.com/rafa-guimaraes/bootcamp-full-stack/tree/master/trabalhos-praticos/trabalho-pratico-2) - Cidades e Estados do Brasil
 
 ## Desafios
 Aplicações desenvolvidas ao final do módulo para colocar em prática os conhecimentos adiquiridos.
