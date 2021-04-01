@@ -7,11 +7,13 @@ const STATE_CITIES_FILE = async (uf) =>
   JSON.parse(await readFile(`states/${uf}.json`));
 
 async function start() {
-  //await createFiles();
-  //await getStatesCitiesCount();
-  //await getStatesCitiesCount(false);
+  await createFiles();
+  await getStatesCitiesCount();
+  await getStatesCitiesCount(false);
   await getCitiesNames();
   await getCitiesNames(false);
+  await getCityName();
+  await getCityName(false);
 }
 
 async function createFiles() {
@@ -70,12 +72,12 @@ async function getCitiesNames(withBiggerNames = true) {
   console.log(citiesList);
 }
 
-async function getBiggerOrSmallerName(uf, biggerName = true) {
+async function getBiggerOrSmallerName(uf, withBiggerName = true) {
   const cities = await STATE_CITIES_FILE(uf);
   let cityName = cities[0].Nome;
 
   for (let { Nome } of cities) {
-    if (biggerName) {
+    if (withBiggerName) {
       if (Nome.length > cityName.length) {
         cityName = Nome;
       }
@@ -84,11 +86,42 @@ async function getBiggerOrSmallerName(uf, biggerName = true) {
         cityName = Nome;
       }
     }
-    if (Nome.localeCompare(cityName) === -1) {
-      cityName = Nome;
+    if (Nome.length === cityName.length) {
+      if (Nome.localeCompare(cityName) === -1) {
+        cityName = Nome;
+      }
     }
   }
   return cityName;
+}
+
+async function getCityName(withBiggerName = true) {
+  const states = STATES_FILE;
+  let citiesList = [];
+
+  for (let { Sigla } of states) {
+    const cityName = await getBiggerOrSmallerName(Sigla, withBiggerName);
+    citiesList.push({ name: cityName, uf: Sigla });
+  }
+  let cityResult = citiesList[0];
+
+  for (let { name, uf } of citiesList) {
+    if (withBiggerName) {
+      if (name.length > cityResult.name.length) {
+        cityResult = { name, uf };
+      }
+    } else {
+      if (name.length < cityResult.name.length) {
+        cityResult = { name, uf };
+      }
+    }
+    if (name.length === cityResult.name.length) {
+      if (name.localeCompare(cityResult.name) === -1) {
+        cityResult = { name, uf };
+      }
+    }
+  }
+  console.log(`${cityResult.name} - ${cityResult.uf}`);
 }
 
 start();
