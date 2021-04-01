@@ -9,11 +9,36 @@ async function start() {
 
     // Init teams array
     data[0].partidas.forEach(({ mandante, visitante }) => {
-      teams.push({ team: mandante, score: 0 });
-      teams.push({ team: visitante, score: 0 });
+      teams.push({ name: mandante, score: 0 });
+      teams.push({ name: visitante, score: 0 });
     });
 
-    console.log(teams);
+    // Fill teams score in array
+    data.forEach((round) => {
+      round.partidas.forEach((match) => {
+        const {
+          placar_mandante,
+          placar_visitante,
+          mandante,
+          visitante,
+        } = match;
+        const homeTeam = teams.find((team) => team.name === mandante);
+        const visitor = teams.find((team) => team.name === visitante);
+
+        if (placar_mandante > placar_visitante) {
+          homeTeam.score += 3;
+        } else if (placar_mandante < placar_visitante) {
+          visitor.score += 3;
+        } else {
+          homeTeam.score++;
+          visitor.score++;
+        }
+      });
+    });
+
+    teams.sort((a, b) => b.score - a.score);
+
+    console.log('O campeão foi: ' + teams[0].name);
   } catch (err) {
     console.log(err);
   }
