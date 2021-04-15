@@ -98,6 +98,7 @@ Aplicações desenvolvidas na metade do módulo para colocar em prática os conh
 Aplicações desenvolvidas ao final do módulo para colocar em prática os conhecimentos adiquiridos.
 
 - [Desafio do Módulo 1](https://github.com/rafa-guimaraes/bootcamp-full-stack/tree/master/desafios/desafio-1) - Pesquisa de usuários
+- [Desafio do Módulo 2](https://github.com/rafa-guimaraes/bootcamp-full-stack/tree/master/desafios/desafio-2) - API para controle de grades
 
 ## Outros desafios
 Aplicações desenvolvidas durante as aulas do módulo
