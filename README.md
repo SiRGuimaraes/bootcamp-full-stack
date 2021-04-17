@@ -106,4 +106,5 @@ Aplicações desenvolvidas durante as aulas do módulo
 - [CRUD](https://github.com/rafa-guimaraes/bootcamp-full-stack/tree/master/outros-desafios/crud) - CRUD simples utilizando html, css e js
 - [Lista de países](https://github.com/rafa-guimaraes/bootcamp-full-stack/tree/master/outros-desafios/lista-paises) - lista de países recebida de uma api
 - [Brasileirão](https://github.com/rafa-guimaraes/bootcamp-full-stack/tree/master/outros-desafios/brasileirao) - Mostra o campeão do campeonato brasileiro de acordo com os resultados das partidas
-- [API banco](https://github.com/rafa-guimaraes/bootcamp-full-stack/tree/master/outros-desafios/my-bank-api) - API que realiza crud com atributos name e balance
+- [API Banco](https://github.com/rafa-guimaraes/bootcamp-full-stack/tree/master/outros-desafios/my-bank-api) - API que realiza crud com atributos name e balance
+- [API Finanças](https://github.com/rafa-guimaraes/bootcamp-full-stack/tree/master/outros-desafios/finances) - API simples para controle de finanças
